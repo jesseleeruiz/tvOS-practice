@@ -9,6 +9,11 @@
 import UIKit
 
 class ImagesViewController: UIViewController {
+    
+    // MARK: - Outlets
+    @IBOutlet var spinner: UIActivityIndicatorView!
+    @IBOutlet var creditLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
