@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8064654924F05606007C6995 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064654824F05606007C6995 /* ImagesViewController.swift */; };
+		8064654B24F05E09007C6995 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064654A24F05E09007C6995 /* SwiftyJSON.swift */; };
 		8078C45B24EFA76600049936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8078C45A24EFA76600049936 /* AppDelegate.swift */; };
 		8078C45D24EFA76600049936 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8078C45C24EFA76600049936 /* ViewController.swift */; };
 		8078C46224EFA76700049936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8078C46124EFA76700049936 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		8064654824F05606007C6995 /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		8064654A24F05E09007C6995 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		8078C45724EFA76500049936 /* Screen Saver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Screen Saver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8078C45A24EFA76600049936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8078C45C24EFA76600049936 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				8078C46624EFA76700049936 /* Info.plist */,
 				80A8728124EFAB9F003B976C /* Main.storyboard */,
 				8064654824F05606007C6995 /* ImagesViewController.swift */,
+				8064654A24F05E09007C6995 /* SwiftyJSON.swift */,
 			);
 			path = "Screen Saver";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				8064654924F05606007C6995 /* ImagesViewController.swift in Sources */,
 				8078C45D24EFA76600049936 /* ViewController.swift in Sources */,
 				8078C45B24EFA76600049936 /* AppDelegate.swift in Sources */,
+				8064654B24F05E09007C6995 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,12 +14,18 @@ class ImagesViewController: UIViewController {
     @IBOutlet var spinner: UIActivityIndicatorView!
     @IBOutlet var creditLabel: UILabel!
     
+    // MARK: - Properties
+    var category: String = ""
+    var appID = "A6DumcjiudECz6RcugrLXh9Y-aJ_izqL8qn6jUGHmr8"
 
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    // MARK: - Methods
 
 
     /*
