@@ -35,6 +35,9 @@ class ViewController: UIViewController {
         focusGuide.heightAnchor.constraint(equalToConstant: 1).isActive = true
         
         focusGuide.preferredFocusEnvironments = [nextButton]
+        
+        // Will keep our preferred focus view we set up in the overriding var
+        restoresFocusAfterTransition = false
     }
     
     // MARK: - Actions
@@ -45,6 +48,7 @@ class ViewController: UIViewController {
     }
     
     // MARK: - Methods
+    // The coordinator will ensure the animations you give it are timed perfectly with the system's own focus animations.
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         super.didUpdateFocus(in: context, with: coordinator)
         // If the user is moving towards the text field
@@ -55,8 +59,17 @@ class ViewController: UIViewController {
             // Otherwise tell the focus guide to redirect to the text field
             focusGuide.preferredFocusEnvironments = [textfield]
         }
+        
+        if context.nextFocusedView == textfield {
+            // We're moving to the text field - animate the tip label
+            coordinator.addCoordinatedAnimations({
+                self.textfield.alpha = 1
+            })
+        } else if context.previouslyFocusedView == textfield {
+            // We're moving away from the text field - animate out the tip label
+            coordinator.addCoordinatedAnimations({
+                self.textFieldTrip.alpha = 0
+            })
+        }
     }
-    
-
 }
-
