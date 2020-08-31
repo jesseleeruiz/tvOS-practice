@@ -14,6 +14,8 @@
 		80C7A58724FC7E7A00563154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C7A58524FC7E7A00563154 /* LaunchScreen.storyboard */; };
 		80C7A58F24FC7F0D00563154 /* animals.json in Resources */ = {isa = PBXBuildFile; fileRef = 80C7A58E24FC7F0D00563154 /* animals.json */; };
 		80C7A59124FC7F1500563154 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C7A59024FC7F1500563154 /* SwiftyJSON.swift */; };
+		80C7A59324FC839C00563154 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C7A59224FC839C00563154 /* GameViewController.swift */; };
+		80C7A59524FC83E200563154 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C7A59424FC83E200563154 /* CardCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		80C7A58824FC7E7A00563154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80C7A58E24FC7F0D00563154 /* animals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animals.json; sourceTree = "<group>"; };
 		80C7A59024FC7F1500563154 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		80C7A59224FC839C00563154 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		80C7A59424FC83E200563154 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				80C7A58824FC7E7A00563154 /* Info.plist */,
 				80C7A58E24FC7F0D00563154 /* animals.json */,
 				80C7A59024FC7F1500563154 /* SwiftyJSON.swift */,
+				80C7A59224FC839C00563154 /* GameViewController.swift */,
+				80C7A59424FC83E200563154 /* CardCollectionViewCell.swift */,
 			);
 			path = "Language Pairs";
 			sourceTree = "<group>";
@@ -142,8 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C7A59324FC839C00563154 /* GameViewController.swift in Sources */,
 				80C7A59124FC7F1500563154 /* SwiftyJSON.swift in Sources */,
 				80C7A57F24FC7E7000563154 /* ViewController.swift in Sources */,
+				80C7A59524FC83E200563154 /* CardCollectionViewCell.swift in Sources */,
 				80C7A57D24FC7E7000563154 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

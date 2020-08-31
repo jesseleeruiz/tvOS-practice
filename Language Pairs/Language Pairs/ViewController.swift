@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // MARK: - Outlets
+    @IBOutlet var language: UISegmentedControl!
+    @IBOutlet var words: UISegmentedControl!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
