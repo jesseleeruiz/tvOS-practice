@@ -15,5 +15,18 @@ class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet var contents: UIImageView!
     @IBOutlet var textLabel: UILabel!
     
+    // MARK: - Properties
+    var word = "?"
     
+    // MARK: - Methods
+    func flip(to image: String, hideContents: Bool) {
+        UIView.transition(with: self,
+                          duration: 0.5,
+                          options: .transitionFlipFromLeft,
+                          animations: {
+                            self.card.image = UIImage(named: image)
+                            self.contents.isHidden = hideContents
+                            self.textLabel.isHidden = hideContents
+        })
+    }
 }
