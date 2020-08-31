@@ -151,11 +151,14 @@ class GameViewController: UICollectionViewController {
                 }
             }
         } else {
-            // 7. Clear first and second, then re-enable user interaction
-            first = nil
-            second = nil
-            view.isUserInteractionEnabled = true
+            // 7. The two cards don't match - flip them back
+            firstCard.flip(to: "cardBack", hideContents: true)
+            secondCard.flip(to: "cardBack", hideContents: true)
         }
+        // 8. Clear first and second, then re-enable user interaction
+        first = nil
+        second = nil
+        view.isUserInteractionEnabled = true
     }
     
     func gameOver() {
